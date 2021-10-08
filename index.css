@@ -25,7 +25,10 @@ button {
   gap: 1vh;
   /* margin: 1vh; */
 }
-
+.fas {
+  font-size: 40px !important;
+  color: rgb(24, 23, 23) !important;
+}
 .nav__menu {
   grid-area: menu;
   justify-content: space-between;
@@ -45,6 +48,9 @@ button {
   margin: 3px;
   background-color: lightgrey;
   text-align: center;
+  box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
   /* flex: 1; */
 }
 .main {
@@ -52,6 +58,9 @@ button {
   background-color: rgb(138, 145, 138);
   background-image: url(./old-brick-black-color-wall-260nw-1605128917.jpg);
   background-size: contain;
+  box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
 }
 .aside {
   grid-area: aside;
@@ -69,6 +78,9 @@ button {
   width: 90%;
   height: 45%;
   background-color: lightgrey;
+  box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
 }
 .footer {
   grid-area: footer;
@@ -81,11 +93,14 @@ button {
 .footer__item {
   width: 20%;
   height: 90%;
-  background-color: grey;
+  background-color: lightgrey;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
 }
 @media screen and (max-width: 728px) {
   .container {
@@ -96,6 +111,7 @@ button {
       "main"
       "aside"
       "footer";
+    gap: 2vh;
   }
   .nav__menu {
     flex-direction: column;
