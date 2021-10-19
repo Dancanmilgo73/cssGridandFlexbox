@@ -6,13 +6,13 @@
 body {
   margin: 1vh;
 }
-button {
+/* button {
   padding: 3px 4px 3px 4px;
   width: 80px;
   border: none;
   color: white;
   background-color: rgb(46, 44, 44);
-}
+} */
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -54,13 +54,36 @@ button {
   /* flex: 1; */
 }
 .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white !important;
   grid-area: main;
   background-color: rgb(138, 145, 138);
-  background-image: url(./old-brick-black-color-wall-260nw-1605128917.jpg);
-  background-size: contain;
+  background-image: url(https://images.unsplash.com/photo-1489209909448-8926a2640f1f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcCUyMHJlcGFpcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
   -webkit-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
+  padding: 2rem;
+}
+.content > h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.content > button,
+button {
+  background-color: rgb(48, 46, 46);
+  padding: 7px !important;
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+.content > button:hover,
+button:hover {
+  cursor: pointer;
+  background-color: rgb(133, 128, 128);
 }
 .aside {
   grid-area: aside;
@@ -73,14 +96,20 @@ button {
 .item {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 90%;
-  height: 45%;
+  width: 100%;
+  height: 100%;
   background-color: lightgrey;
   box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
   -webkit-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 3px 6px 5px -6px rgba(0, 0, 0, 0.45);
+}
+.item:first-child {
+  margin-bottom: 2%;
+}
+.item:last-child {
+  margin-top: 2%;
 }
 .footer {
   grid-area: footer;
